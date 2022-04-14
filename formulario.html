@@ -7,21 +7,31 @@
     <title>Formulário HTML</title>
 </head>
 <body>
-    <p><b>Formulário</b></p>
+    <p><font face="arial" size="4"><b>Formulário para Cadastro</b></font></p>
+    
     <form action="mailto:prof.carolalves90@gmail.com" method="get">
-        <p><font face="arial">Nome:<input type="text" name="Nome" Size="20" Maxleinght="50"></p>
-        <p>Estado:<input type="text" name="uf" size="2" value="SP"></p>
-        <p>Senha:<input type="password" name="cartao" Size="6"></p>
+        
+        <p><font face="arial">Nome: <input type="text" name="Nome" Size="30" Maxleinght="50"></p>
+        <p>E-mail:  <input type="text" name="email" size="30" maxlength="30"></p>
+        <p>Sexo: <input type="radio" name="genero1">Feminino <input type="radio" name="genero2">Masculino</p>
+        <p>RG: <input type="text" name="documento1" Size="30" maxlength="30"></p>
+        <p>CPF: <input type="text" name="documento2" size="30" maxlength="30"></p>
+        
         <p>Selecione um dia da semana:<br>
             <input type="radio" name="dia1"> Segunda<br>
             <input type="radio" name="dia2"> Quarta<br>
             <input type="radio" name="dia3"> Sábado<br>
-        <p>Selecione uma das opções abaixo:<br>
+        
+            <p>Selecione uma das opções abaixo:<br>
             <input type="checkbox" name="opção1" size="1"> Manhã<br>
             <input type="checkbox" name="opção2" size="1"> Tarde<br>
             <input type="checkbox" name="opção3" size="1"> Noite<br>
+        
             <p>Coloque sua sugestão:<br>
-            <textarea name="sugestão" rows="10" cols="40" name="descrever">Escreve aqui...</textarea></p>
+            <textarea name="sugestão" rows="5" cols="40" name="descrever">Escreva aqui...</textarea></p>
+
+            <p>Login: <input type="text" name="login" size="16" maxlength="30"></p>
+            <p>Senha: <input type="password" name="cadastro" size="16"></p>
 
         <input type="submit" value="Enviar">
         <input type="reset" value="limpar">
