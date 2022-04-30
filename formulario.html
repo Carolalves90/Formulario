@@ -7,22 +7,32 @@
     <title>Formulário HTML</title>
 </head>
 <body>
-    <p><font color="blue" size="4" face="arial"><b>Formulário para Cadastro</b></font></p>
-    
-    <form action="mailto:prof.carolalves90@gmail.com" method="get">
-        <TABLE WIDTH ="100%" BORDER="0" CELLSPACING="5">
 
+    <div>
+        <h1>Formulário para Cadastro</h1>
+        <p>Preencha com suas informações</p>
+        <br>
+    </div>
+    
+    <form>
+        <TABLE WIDTH ="100%" BORDER="0" CELLSPACING="5">
+        
         <p><font face="arial">Nome: 
             <input type="text" name="Nome" Size="30" Maxleinght="50"></p>
+
         <p>E-mail:  
             <input type="text" name="email" size="30" maxlength="30"></p>
+
         <p>Sexo: 
             <input type="radio" name="sexo" value="fem">Feminino 
             <input type="radio" name="sexo" value="masc">Masculino</p>
+
         <p>RG: 
             <input type="text" name="documento1" Size="30" maxlength="30"></p>
+
         <p>CPF: 
             <input type="text" name="documento2" size="30" maxlength="30"></p>
+            <br>
         
         <p>Selecione um dia da semana:<br>
             <input type="checkbox" name="dia1" value="dia"> Segunda<br>
@@ -33,16 +43,22 @@
             <input type="radio" name="opção1" size="1" value="periodo"> Manhã<br>
             <input type="radio" name="opção2" size="1" value="periodo"> Tarde<br>
             <input type="radio" name="opção3" size="1" value="periodo"> Noite<br>
-        
+            <br>
+            
         <p>Coloque sua sugestão:<br>
             <textarea name="sugestão" rows="5" cols="40" name="descrever">Escreva aqui...</textarea></p>
+            <br>
 
-            <p>Login: <input type="text" name="login" size="16" maxlength="30"></p>
-            <p>Senha: <input type="password" name="cadastro" size="16"></p>
+            <p>Login: 
+                <input type="text" name="login" size="16" maxlength="30"></p>
+            <p>Senha: 
+                <input type="password" name="cadastro" size="16"></p>
 
-        <input type="submit" value="Enviar">
-        <input type="reset" value="limpar">
-        </p>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </div>
+
     </p><table>
     </form></font>
 </body>
